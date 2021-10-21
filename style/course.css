@@ -1,0 +1,254 @@
+/* Course */
+
+.course{
+    width: 80%;
+    opacity: 0;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 80px;
+    transform: translatey(40%);
+    transition: all 1s ease-in;
+}
+
+.active{
+    opacity: 1;
+    transform: translatey(0%);
+}
+
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.course h3{
+    font-size: 24px;
+}
+.course img{
+    padding-top : 20px;
+    width : 90%;
+    border-radius: 20px;
+    
+}
+
+.course p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.course-col p{
+    padding: 15px;
+    text-align: justify;
+}
+
+.row{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.3s ease-in;
+}
+
+.course h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.courseBtn button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 15px 10px 15px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+    color: rgb(233, 233, 233) ;
+    background: #990000;
+    transition: 0.3s ease-out;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.course-col:hover{
+    background:rgba(10, 10, 10, 0.3);  
+}
+
+.courseBtn button:hover{
+    color: #990000 ;
+    background: white;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Contact Us */
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    justify-items: center;
+    opacity: 0;
+    transform: translateY(40%);
+    transition: all 1s ease-in;
+    
+}
+
+.contactUs{
+    
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    background-image: linear-gradient(rgba(24, 23, 23, 0.7),rgba(31, 31, 31, 0.7)),url(../assets/cta.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contactUs h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.contactUs a{
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #ffff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+}
+
+.active2{
+    opacity: 1;
+    transform: translatey(0%);
+}
+
+.contactUs a:hover{
+    border: 1px solid #990000;
+    background: #990000;
+    transition: 1s;
+}
+
+.footer{
+
+    height: 460px ;
+    background: #2a2d2e;
+    position: relative;
+    color: white;
+}
+
+
+.footer h1{
+    padding : 30px;
+}
+.fcontainer1 p, .fcontainer2 p{
+    font-size: 14px;
+    color: rgb(119, 118, 118);
+}
+
+.footer img{
+    top: 2%;
+    width: 100px;
+    left: 1%;
+    position: absolute;
+}
+
+.footer h2{
+    font: 14px;
+}
+.footer p{
+    font-size: 12px;
+}
+
+.fcontainer1, .fcontainer2{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    text-align: center;
+}
+
+.fcontainer1{
+    margin-bottom: 40px;
+}
+
+.flogo, .mechtech{
+    flex: auto;
+}
+
+.ourclass, .ourprogram, .contact{
+    justify-content: center;
+    flex: auto;
+    flex-wrap: wrap;
+}
+
+.fcontainer2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer h2{ 
+    margin-bottom: 20px;
+}
+
+.footer li{
+    padding: 10px;
+    list-style: none;
+
+    font-size: 14px;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(119, 118, 118);
+    padding: 10px;
+}
+
+.ourprogram{
+    transform: translateX(59px);
+}
+
+.contact li{
+    text-align: justify;
+    transform: translateX(35%);
+}
+.email,.fab{
+    font-size: 22px;
+    padding-right: 10px;
+    color: white;
+    transform: translateY(4px);
+}
+
+.footer a:hover{
+    background : white;
+    color: black;
+    transition: 1s;
+    text-align: justify;
+}
+
+.end{
+    margin-top: 20px;
+    text-align: center;
+    transform: translateY(-10px);   
+}
