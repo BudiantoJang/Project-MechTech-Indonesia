@@ -21,6 +21,11 @@
 <body>
     
     <header>
+
+        <div class="navlinks"> 
+            <a href="./login.html">LOGIN</a>
+            <a href="#">REGISTER</a>
+        </div>
         <nav>
             <img class="img-logo" src="./assets/mechtech logo.png" alt="MechTech Logo">
             <h3 id = "logo">MechTech Indonesia</h3>
@@ -28,8 +33,20 @@
             <a href="#" class = "nav navigation">Class</a>
             <a href="#" class = "nav navigation">About Us</a>
             <a href="#" class = "nav navigation">Articles</a>
-            <i class="nav fas fa-user-circle"></i>
+            <i class="navs fas fa-user-circle" onclick="showLogin()"></i>
+            <i class="second-icon fas fa-user-circle" onclick="closeLogin()">aa</i>
         </nav>
+            
+
+        <script>
+            var showMenu = document.querySelector(".navlinks");
+            var hideicon = document.querySelector(".navs");
+            var showicon  = docum.querySelector(".second-icon");
+            function showLogin(){
+                showMenu.style.display = "block";
+
+            }
+        </script>
 
         <section>
             <div class="hero">
@@ -144,12 +161,14 @@
         
                 <div class="contact">
                     <h2>Contact</h2>
-                    <ul>
-                        <li><a href=""><span class="fas email fa-envelope-square"></span>budiantojang@gmail.com</a></li>
-                        <li><a href=""><span class="fab fa-instagram-square"></span>@budiantojang</a></li>
-                        <li><a href=""><span class="fab fa-whatsapp-square"></span>0895339038478</a></li>
-                        <li><a href=""><span class="fab fa-youtube-square"></span>Budianto Jang</a></li>
-                    </ul>
+                    <div class="cont">
+                        <ul>
+                            <li class="cont"><a href=""><span class="fas email fa-envelope-square"></span>budiantojang@gmail.com</a></li>
+                            <li class="cont"><a href=""><span class="fab fa-instagram-square"></span>@budiantojang</a></li>
+                            <li class="cont"><a href=""><span class="fab fa-whatsapp-square"></span>0895339038478</a></li>
+                            <li class="cont"><a href=""><span class="fab fa-youtube-square"></span>Budianto Jang</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
                 
@@ -167,5 +186,6 @@
     
     <script src="apps/app.js"></script>
     <script src="apps/scroll.js"></script>
+    <script src="apps/teseting.js"></script>
 </body>
 </html>

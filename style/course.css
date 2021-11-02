@@ -223,6 +223,7 @@
     text-decoration: none;
     color: rgb(119, 118, 118);
     padding: 10px;
+    transition: all, 0.5s;
 }
 
 .ourprogram{
@@ -236,14 +237,13 @@
 .email,.fab{
     font-size: 22px;
     padding-right: 10px;
-    color: white;
+    color: rgb(119, 118, 118);
     transform: translateY(4px);
 }
 
-.footer a:hover{
+.cont a:hover{
     background : white;
     color: black;
-    transition: 1s;
     text-align: justify;
 }
 

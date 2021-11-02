@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    background-color: #f0ecec;
+    align-items: center;
+}
 .slider{
     position: absolute;
     top: 0;
@@ -22,6 +26,7 @@ nav{
     align-items: center;
     min-height: 10vh;
     font-size: 16px;
+    background-color: #990000;
 }
 
 nav img{
@@ -60,60 +65,6 @@ nav img{
     color: white;
     font-size: 20px;
     cursor: pointer;
-}
-
-section{
-    display: flex;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero{
-    height: 80%;
-    width: 80%;
-    position: relative;
-}
-.hero img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.headline{
-    position:absolute;
-    top: 88%;
-    left: 5%;
-    font-size: 50px;
-    transform: translate(-20%, -80%);
-    color: white;
-    z-index: 1;
-}
-
-.introduction{
-    position:absolute;
-    top: 40%;
-    left: 60%;
-    font-size: 16px;
-    text-align: justify;
-    transform: translate(-20%, -80%);
-    color: rgb(199, 198, 198);
-    z-index: 1;
-    
-}
-
-.info-button{
-    position:absolute;
-    top: 50%;
-    left: 69%;
-    font-size: 18px;
-    padding: 8px 10px;
-    color: white;
-    background: #48547c;
-    z-index: 1;
-    border-style: none;
-    cursor: pointer;
-    font-weight: bold;
 }
 
 
@@ -184,39 +135,86 @@ section{
     opacity: 0;
 }
 
-@media(max-width: 700px){
+.container{
+    margin: 40px auto;
+    width: 40%;
+    height: 600px;
+    background-color: #fffcfc;
+    text-align: center;
+}
 
-    #logo{
-        font-size: 18px;
-    }
+.container h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
-    .nav{
-        display: flex;
-        flex-direction: column;
-        display: none;
-    }
+.forms{
+    color: black;
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    text-align: left;
+}
 
-    .headline{
-        font-size: 24px;
-        position: absolute;
-        top: 550px;
-    }
-    .introduction{
-        font-size: 12px;
-        text-align: center;
-        width: 350px;
-        position: absolute;
-        top: 200px;
-        left: 5px;
-    }
+label{
+    
+    margin-bottom: 30px;
+}
 
-    .info-button{
-        top: 300px;
-        left: 30px;
-        width: 300px;
-    }
+input{
+    font-size: 12px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    background-color: #f0ecec;
+}
 
-    .course h1{
-        font-size: 1000px;
-    }
+.forms .lupa,label, input{
+    display: inline;
+}
+
+.lupa{
+    color: #1c7ccc;
+    text-decoration: none;
+}
+
+.ingat{
+    display: inline;
+    float: right;
+    margin-right: 30px;
+}
+
+.checkbox{
+    transform: translate(165px,-56px);
+   
+}
+
+.pilihan{
+    text-align: center;
+    transform: translateY(-30px);
+}
+
+.pilihan a{
+    margin: auto;
+    display: block;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    background-color: #f0342c;
+    font-weight: bold;
+    color: white;    
+}
+
+.pilihan a:hover{
+    background-color: #dd231c;
+}
+
+.lupa:hover{
+    color: #176fb8;
 }

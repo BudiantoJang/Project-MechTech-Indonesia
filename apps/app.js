@@ -60,3 +60,4 @@ tl.fromTo(hero,1,
     {opacity: "0", x: "0"},
     "-=0.9"
     )
+
